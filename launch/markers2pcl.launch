@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- /// Nodes /// -->
+    <!-- Markers2PCL -->
+    <node pkg="markers2pcl" type="markers2pcl" name="markers2pcl"/>
+
+    <!-- Launch RVIZ -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find markers2pcl)/rviz/rviz_settings.rviz"/>
+</launch>
